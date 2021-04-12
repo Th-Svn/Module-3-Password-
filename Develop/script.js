@@ -12,6 +12,36 @@ function generatePassword() {
   var newPassword = prompt("Please enter a value between 8 and 12");
   console.log("Value between 9 and 12   " + newPassword)
 
+  if (lowercase === "Yes"){
+    var strlower = "abcdefghijklmnopqrstuvwxyz";
+  }
+  else {
+    console.log("No lowercase");
+  }
+
+  if (uppercase === "Yes"){
+    var strupper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  }
+  else {
+    console.log("No uppercase");
+  }
+
+  if (numeric === "Yes"){
+    var strnumeric = "0123456789";
+  }
+  else{
+    console.log("No Numeric values");
+  }
+
+  var pass = "";
+  var str = (strlower + strupper + strnumeric);
+
+  for (i=1; i <= 12; i++) {
+    var char = Math.floor(Math.random() * str.length +1);
+
+    pass += str.charAt(char)
+  }
+  return pass;
 }
 
 // Get references to the #generate element
