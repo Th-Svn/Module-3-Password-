@@ -13,3 +13,6 @@
 #Once all the prompts are answered, the program generates a password matching the users criterias
 
 #The password is then displayed on the page
+
+To generate your password, click on the link below :
+##  https://th-svn.github.io/Module-3-Password-/
